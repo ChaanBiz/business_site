@@ -48,37 +48,6 @@ header {
   }
 }
 
-.mobile-nav {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: -100%;
-  right: 0;
-  width: 50%;
-  height: 100vh;
-  z-index: 10000;
-  padding-left: 30px;
-  background-color: rgba(255, 255, 255, .5);
-  backdrop-filter: blur(20px);
-  a {
-    margin-bottom: 30px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    color: rgb(115, 109, 131);
-    transition: .4s;
-    line-height: 20px;
-    width: 100%;
-    &:hover {
-      color:rgb(143, 96, 255);
-    }
-  }
-}
-
-.mobile-nav.is-active {
-  top: 43.89px;
-}
-
 .hamburger {
 	position: relative;
 	display: block;
@@ -886,6 +855,39 @@ section .hero {
       display: none;
     }
   }
+  
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 43.89px;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    z-index: 10000;
+    padding-left: 30px;
+    transition: .4s;
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    a {
+      margin-bottom: 30px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      color: rgb(115, 109, 131);
+      transition: .4s;
+      line-height: 20px;
+      width: 100%;
+      &:hover {
+        color:rgb(143, 96, 255);
+      }
+    }
+  }
+
+  .mobile-nav.is-active {
+    right: 0;
+  }
+  
   .hamburger {
     opacity: 1;
   }

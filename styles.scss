@@ -22,8 +22,12 @@ header {
   .logo {
     display: flex;
     justify-content: center;
+    align-items: center;
     a {
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
         width: 30%;
       }
@@ -46,6 +50,10 @@ header {
       }
     }
   }
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .hamburger {
@@ -85,7 +93,7 @@ header {
 }
 
 .space {
-  height: 70px;
+  height: 60px;
   width: 100%;
   background-color: rgb(248, 240, 255);
   position: relative;
@@ -96,7 +104,6 @@ header {
     transform: translate(-50%);
     font-size: 15px;
     color: rgb(78, 71, 95);
-    
   }
 }
 
@@ -860,7 +867,7 @@ section .hero {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 44px;
+    top: 38px;
     right: -100%;
     width: 50%;
     height: 100vh;

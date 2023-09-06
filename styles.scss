@@ -16,8 +16,8 @@ header {
   width: 100%;
   padding: 5px 0;
   position: fixed;
-  background-color: rgba(255, 255, 255, .7);
-  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(20px);
   z-index: 10000;
   .logo {
     display: flex;
@@ -46,6 +46,72 @@ header {
       }
     }
   }
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -100%;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  z-index: 10000;
+  padding-left: 30px;
+  background-color: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(20px);
+  a {
+    margin-bottom: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(115, 109, 131);
+    transition: .4s;
+    line-height: 20px;
+    width: 100%;
+    &:hover {
+      color:rgb(143, 96, 255);
+    }
+  }
+}
+
+.mobile-nav.is-active {
+  top: 43.89px;
+}
+
+.hamburger {
+	position: relative;
+	display: block;
+	width: 30px;
+	cursor: pointer;
+  margin-right: 20px;
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.hamburger:after, .hamburger:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color: rgb(217, 177, 243);
+	margin: 6px 0px;
+	transition: 0.4s;
+  border-radius: 10px;
+}
+
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-3px, 1px);
+}
+
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.hamburger.is-active .bar {
+	opacity: 0;
 }
 
 .space {
@@ -813,6 +879,12 @@ section .hero {
 }
 
 @media (max-width: 670px) {
+  header {
+    justify-content: space-between;
+    ul {
+      display: none;
+    }
+  }
   .label {
     padding: 3em 1em;
     h2 {

@@ -103,7 +103,50 @@ header ul li a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.user_interface {
+footer {
+  background-color: rgb(248, 240, 255);
+  padding: 10px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(115, 109, 131);
+  font-weight: 100;
+  margin: auto;
+}
+footer .desc {
+  border-bottom: 1px solid rgb(188, 181, 194);
+  padding: 10px 0;
+  text-align: center;
+}
+footer .quick_links {
+  padding: 30px 0;
+  display: flex;
+}
+footer .quick_links .links {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+footer .quick_links .links p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+footer .quick_links .links a {
+  text-decoration: none;
+  color: rgb(142, 133, 167);
+  transition: 0.4s;
+}
+footer .quick_links .links a:hover {
+  color: rgb(143, 96, 255);
+}
+footer .bottom {
+  border-bottom: 1px solid rgb(188, 181, 194);
+  padding: 5px 0;
+  margin: 5px;
+}
+
+.services .user_interface {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -181,7 +224,7 @@ header ul li a:hover {
     }
   }*/
 }
-.user_interface .website_ui .website {
+.services .user_interface .website_ui .website {
   width: 100%;
   display: flex;
   align-items: center;
@@ -189,121 +232,73 @@ header ul li a:hover {
   background-color: rgb(255, 255, 255);
   padding-bottom: 5rem;
 }
-.user_interface .website_ui .website .img {
+.services .user_interface .website_ui .website .img {
   width: 70%;
   display: flex;
   justify-content: center;
 }
-.user_interface .website_ui .website .img img {
+.services .user_interface .website_ui .website .img img {
   width: 100%;
   border-radius: 10px;
 }
-.user_interface .mobile {
+.services .user_interface .mobile {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(248, 240, 255);
   width: 100%;
 }
-.user_interface .mobile .label {
+.services .user_interface .mobile .label {
   padding: 3rem;
 }
-.user_interface .mobile .image {
+.services .user_interface .mobile .image {
   width: 50%;
 }
-.user_interface .mobile .image img {
+.services .user_interface .mobile .image img {
   width: 100%;
 }
-
-.web_dev {
+.services .web_dev {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem;
 }
-.web_dev .offer {
+.services .web_dev .offer {
   display: flex;
   align-items: center;
   position: relative;
 }
-.web_dev .offer .heading {
+.services .web_dev .offer .heading {
   margin-left: 30px;
   width: 40%;
 }
-.web_dev .offer .heading h3 {
+.services .web_dev .offer .heading h3 {
   font-size: 40px;
   line-height: 40px;
 }
-.web_dev .offer .heading h3 span {
+.services .web_dev .offer .heading h3 span {
   font-size: 20px;
   font-weight: 300;
 }
-.web_dev .offer .image {
+.services .web_dev .offer .image {
   width: 50%;
 }
-.web_dev .offer .image img {
+.services .web_dev .offer .image img {
   width: 100%;
 }
-.web_dev .right_of {
-  flex-direction: row-reverse;
-}
-
-.hot {
+.services .hot {
   position: relative;
 }
-.hot .gallery {
+.services .hot .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.hot .gallery img {
+.services .hot .gallery img {
   width: 45%;
   margin: 0 5px 5px;
   box-shadow: 0 0 5px rgb(248, 240, 255);
-}
-
-footer {
-  background-color: rgb(248, 240, 255);
-  padding: 10px 0 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 14px;
-  color: rgb(115, 109, 131);
-  font-weight: 100;
-  margin: auto;
-}
-footer .desc {
-  border-bottom: 1px solid rgb(188, 181, 194);
-  padding: 10px 0;
-  text-align: center;
-}
-footer .quick_links {
-  padding: 30px 0;
-  display: flex;
-}
-footer .quick_links .links {
-  display: flex;
-  flex-direction: column;
-  margin: 0 30px;
-}
-footer .quick_links .links p {
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-footer .quick_links .links a {
-  text-decoration: none;
-  color: rgb(142, 133, 167);
-  transition: 0.4s;
-}
-footer .quick_links .links a:hover {
-  color: rgb(143, 96, 255);
-}
-footer .bottom {
-  border-bottom: 1px solid rgb(188, 181, 194);
-  padding: 5px 0;
-  margin: 5px;
 }
 
 .portfolio {
@@ -315,6 +310,8 @@ footer .bottom {
 .portfolio .hero {
   display: flex;
   justify-content: center;
+  width: 100%;
+  padding: 3em 2em;
 }
 .portfolio .hero .heading {
   border-bottom: 1px solid rgb(248, 240, 255);
@@ -452,12 +449,11 @@ section .hero {
 .ui .wireframe {
   padding: 10rem 0 2em;
   display: flex;
-}
-.ui .wireframe .text {
-  width: 50%;
-  display: flex;
   justify-content: center;
   align-items: center;
+}
+.ui .wireframe .label {
+  width: 50%;
 }
 .ui .wireframe .image {
   width: 50%;
@@ -473,10 +469,8 @@ section .hero {
 .ui .redesign {
   display: flex;
   padding: 4rem 3rem;
-  flex-direction: row-reverse;
-  align-items: center;
 }
-.ui .redesign .text {
+.ui .redesign .label {
   width: 50%;
 }
 .ui .redesign .image {
@@ -521,14 +515,28 @@ section .hero {
   padding: 5px 40px;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .web_dev_sec {
   width: 100%;
 }
 .web_dev_sec .hero {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .web_dev_sec .hero img {
   width: 500px;
+}
+.web_dev_sec #websites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .web_dev_sec #websites .label {
   padding: 0;
@@ -545,6 +553,8 @@ section .hero {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+  line-height: 0%;
 }
 .web_dev_sec #websites .types .type p {
   position: absolute;
@@ -566,6 +576,9 @@ section .hero {
 }
 .web_dev_sec #web3 {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .web_dev_sec #web3 .image_link {
   width: 100%;
@@ -577,7 +590,6 @@ section .hero {
   padding: 3rem 0;
   background-color: rgb(46, 57, 88);
   display: flex;
-  flex-direction: row-reverse;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -591,9 +603,13 @@ section .hero {
 .web_dev_sec .image_link .white_link {
   color: white;
 }
+.web_dev_sec #front_end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .web_dev_sec #rebuild {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   background-color: rgb(248, 240, 255);
@@ -612,6 +628,9 @@ section .hero {
 .web_dev_sec #call_to_action {
   text-align: center;
   padding: 7em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .web_dev_sec #call_to_action .web_dev_options {
   display: flex;
@@ -653,7 +672,7 @@ section .hero {
     width: 300px;
   }
 }
-@media (max-width: 1250px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .web_dev_sec .label {
     margin-right: 1rem;
   }
@@ -664,6 +683,9 @@ section .hero {
   .web_dev_sec #call_to_action .web_dev_options a {
     margin: 2px 0;
   }
+  .web_dev_sec #web3 .image_link {
+    margin-right: 0;
+  }
   .web_dev_sec .image_link {
     margin-right: 1rem;
   }
@@ -671,7 +693,7 @@ section .hero {
     width: 100%;
   }
 }
-@media (max-width: 1250px) and (max-width: 1000px) and (max-width: 900px) {
+@media (max-width: 900px) {
   .label {
     padding: 3em 0;
   }
@@ -688,8 +710,14 @@ section .hero {
   .portfolio .web_features {
     padding: 0 0 2em;
   }
+  .portfolio .web_features .slide .feature {
+    margin: 0 15px;
+  }
   .portfolio .web_features .slide .feature img {
-    width: 70px;
+    width: 60px;
+  }
+  .portfolio .web_features .slide .feature p {
+    font-size: 13px;
   }
   .portfolio .contacts {
     padding: 3rem 0;
@@ -739,13 +767,22 @@ section .hero {
     padding: 3px 0;
   }
 }
-@media (max-width: 1250px) and (max-width: 1000px) and (max-width: 900px) and (max-width: 670px) {
+@media (max-width: 670px) {
+  .label {
+    padding: 3em 1em;
+  }
   .label h2 {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 30px;
   }
   .label h2 span {
     font-size: 18px;
+  }
+  .label p {
+    width: 100%;
+  }
+  .label, .web_dev_sec #rebuild .label, #wordpress .label {
+    width: 70%;
   }
   p {
     font-size: 14px;
@@ -753,7 +790,70 @@ section .hero {
   .w_pic {
     flex-direction: column;
   }
-  .web_dev_sec #call_to_action .web_dev_options a {
+  .w_pic div {
+    width: 100%;
+  }
+  .space p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .portfolio .web_features .slide {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio .web_features .slide .feature {
+    margin: 5px 15px;
+  }
+  .services .user_interface .mobile .image {
+    width: 80%;
+  }
+  .services .web_dev .offer .heading {
+    text-align: center;
+  }
+  .services .web_dev .offer .heading h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .services .web_dev .offer .heading h3 span {
+    font-size: 18px;
+  }
+  .services .web_dev .offer .image {
+    width: 80%;
+    padding: 2em 0;
+  }
+  .services .web_dev .offer:last-child {
+    flex-direction: column-reverse;
+    padding: 2em 0;
+  }
+  .services .hot .gallery img {
+    width: 100%;
+    margin: 0;
+  }
+  .ui .wireframe, .ui .redesign {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ui .wireframe .label, .ui .redesign .label {
+    width: 70%;
+  }
+  .ui .wireframe .image, .ui .redesign .image {
+    width: 100%;
+  }
+  .web_dev_sec .hero img {
+    width: 100%;
+  }
+  .web_dev_sec #websites .types .type p {
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  .web_dev_sec #rebuild .image_link {
+    width: 80%;
+  }
+  .web_dev_sec #wordpress .image_link {
+    width: 60%;
+  }
+  #call_to_action .options a, .ui_choice .ui_btn a {
     font-size: 16px;
   }
   footer .quick_links {
@@ -765,6 +865,133 @@ section .hero {
   }
   footer .quick_links .links p {
     margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .label h2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .label h2 span {
+    font-size: 16px;
+  }
+  p, a {
+    font-size: 13px;
+  }
+  .space p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .options {
+    margin-bottom: 15px;
+  }
+  .hero {
+    padding: 1rem 0;
+  }
+  .full {
+    width: 100%;
+  }
+  .portfolio {
+    width: 100%;
+  }
+  .portfolio .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 2em 0;
+  }
+  .portfolio .hero .heading {
+    border: none;
+    padding-bottom: 1.9em;
+    text-align: center;
+  }
+  .portfolio .hero .heading h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .portfolio .hero .heading p {
+    margin-left: 2px;
+    line-height: 15px;
+  }
+  .portfolio .hero .par {
+    padding-bottom: 1em;
+    width: 90%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .portfolio .deals .count_down {
+    padding-bottom: 1rem;
+  }
+  .portfolio .deals .count_down .box {
+    margin: 0 7px;
+  }
+  .portfolio .deals .count_down .box h2 {
+    font-size: 25px;
+    line-height: 14px;
+    color: rgb(115, 109, 131);
+  }
+  .portfolio .deals .count_down .box span {
+    font-size: 13px;
+    margin-left: 3px;
+  }
+  .portfolio .contacts {
+    padding: 3rem 0 0;
+  }
+  .services .user_interface .mobile .image {
+    width: 90%;
+  }
+  .services .web_dev .offer .heading h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .services .web_dev .offer .heading p {
+    margin-top: 3px;
+    line-height: 17px;
+  }
+  .services .web_dev .offer .image {
+    width: 90%;
+  }
+  .ui .wireframe {
+    padding: 2rem 0;
+  }
+  .ui .wireframe .text {
+    width: 70%;
+  }
+  .ui .wireframe .image {
+    width: 100%;
+  }
+  .ui .ui_choice {
+    padding: 0 2rem 2rem;
+    text-align: center;
+  }
+  .ui .ui_choice .ui_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ui .ui_choice .ui_btn a {
+    margin-bottom: 5px;
+  }
+  .ui .redesign {
+    padding: 1rem;
+  }
+  .ui .redesign .image {
+    width: 100%;
+  }
+  .ui .redesign .label {
+    width: 70%;
+  }
+  .web_dev_sec #websites .types .type {
+    width: 100%;
+  }
+  .web_dev_sec #rebuild {
+    padding: 0 0 2em;
+  }
+  .web_dev_sec #call_to_action {
+    padding: 2em 1em;
+  }
+  footer .quick_links .links {
+    margin: 10px 0;
   }
 }
 

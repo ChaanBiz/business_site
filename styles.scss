@@ -89,6 +89,7 @@ header {
 	background: none;
 	outline: none;
 	border: none;
+  opacity: 0;
 }
 
 .hamburger:after, .hamburger:before {
@@ -884,6 +885,9 @@ section .hero {
     ul {
       display: none;
     }
+  }
+  .hamburger {
+    opacity: 1;
   }
   .label {
     padding: 3em 1em;

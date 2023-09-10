@@ -431,15 +431,18 @@ footer {
     }
     .claim_btn {
       display: flex;
-      justify-content: center;
-      button {
+      flex-direction: column;
+      align-items: center;
+      button, a {
         background: transparent;
         font-size: 16px;
         padding: 5px 20px;
+        margin-bottom: 20px;
         border-radius: 10px;
         font-weight: 500;
         color: rgb(115, 109, 131);
         border: 2px solid rgb(115, 109, 131);
+        text-decoration: none;
         transition: .4s;
         cursor: pointer;
         &:hover {

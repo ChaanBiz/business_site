@@ -411,6 +411,9 @@ footer {
     background-color: rgb(248, 240, 255);
     width: 100%;
     padding-bottom: 3rem;
+    .claim_note {
+      margin-bottom: 20px;
+    }
     .count_down {
       display: flex;
       align-items: center;

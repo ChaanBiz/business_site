@@ -397,6 +397,9 @@ footer .bottom {
   width: 100%;
   padding-bottom: 3rem;
 }
+.portfolio .deals .claim_note {
+  margin-bottom: 20px;
+}
 .portfolio .deals .count_down {
   display: flex;
   align-items: center;

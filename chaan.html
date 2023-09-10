@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <script defer src="counter.js" ></script>
   <script src="header.js" defer></script>
+  <script src="claim.js" defer></script>
 </head>
 <body>
   <header>
@@ -73,6 +74,8 @@
       <div class="label">
         <h2>50% Discount!<br> Prepare to claim<br><span>at September 15, 2023</span></h2>
       </div>
+      
+      <p class="claim_note">claim button will be available in</p>
       <div class="count_down">
         <div class="box">
           <h2 id="day">00</h2><span>days</span>
@@ -89,10 +92,16 @@
       </div>
 
       <div class="claim_btn">
-        <!-- <p>reservation will be available at September 10, 2023</p> -->
-        <!-- <button>choose project for reservation</button> -->
-        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#drafts?compose=jrjtXVXCLkzBZCBHGZLhwNgmqRmsmLLsSJGjZLZDtGxpbMtNMBKhKnbVlkBTXSBFzmmGqLjw">Reserve</a>
-        <p>note: you'll be transferred to gmail for confirmation</p>
+        <!-- <button id="claim_btn">Claim</button> -->
+        <!-- <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#drafts?compose=jrjtXVXCLkzBZCBHGZLhwNgmqRmsmLLsSJGjZLZDtGxpbMtNMBKhKnbVlkBTXSBFzmmGqLjw">Reserve</a> -->
+        <!-- <p>note: you'll be transferred to gmail for confirmation</p> -->
+      </div>
+
+      <div id="claim_page">
+        
+      </div>
+      <div id="claim_success">
+        
       </div>
     </div>
 

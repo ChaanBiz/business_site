@@ -691,6 +691,7 @@ section .hero {
 }
 .web_dev_sec #web3 .image_link {
   width: 100%;
+  margin: 0;
 }
 .web_dev_sec #web3 .image_link img {
   width: 100%;

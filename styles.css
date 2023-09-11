@@ -452,36 +452,50 @@ footer .bottom {
 }
 .portfolio .discount h2 {
   color: rgb(115, 109, 131);
+  font-weight: 600;
 }
 .portfolio .discount .choices {
   margin: 50px 0;
   display: flex;
   flex-wrap: wrap;
 }
-.portfolio .discount .choices .outer {
+.portfolio .discount .choices .outer_most {
+  text-align: center;
+}
+.portfolio .discount .choices .outer_most .heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(115, 109, 131);
+  padding-bottom: 5px;
+}
+.portfolio .discount .choices .outer_most .outer {
   background-color: rgb(248, 240, 255);
   box-shadow: 0 0 5px rgba(115, 109, 131, 0.3);
   padding: 10px;
   border-radius: 20px;
   margin: 0 20px;
-}
-.portfolio .discount .choices .outer .price div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5px 0 30px;
 }
-.portfolio .discount .choices .outer .price div p span {
+.portfolio .discount .choices .outer_most .outer .price div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0 10px;
+}
+.portfolio .discount .choices .outer_most .outer .price div p span {
   text-decoration: line-through;
 }
-.portfolio .discount .choices .outer .price div #price {
+.portfolio .discount .choices .outer_most .outer .price div #price {
   margin-left: 5px;
   font-size: 20px;
   font-weight: 600;
   color: rgb(142, 133, 167);
 }
-.portfolio .discount .choices .outer .box {
+.portfolio .discount .choices .outer_most .outer .box {
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -491,7 +505,7 @@ footer .bottom {
   text-decoration: none;
   color: black;
 }
-.portfolio .discount .choices .outer .box img {
+.portfolio .discount .choices .outer_most .outer .box img {
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 0 5px rgba(115, 109, 131, 0.3);

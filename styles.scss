@@ -467,50 +467,64 @@ footer {
     padding: 50px 0 20px;
     h2 {
       color: rgb(115, 109, 131);
+      font-weight: 600;
     }
     .choices {
       margin: 50px 0;
       display: flex;
       flex-wrap: wrap;
-      .outer {
-        background-color: rgb(248, 240, 255);
-        box-shadow: 0 0 5px rgba(115, 109, 131, .3);
-        padding: 10px;
-        border-radius: 20px;
-        margin: 0 20px;
-        .price {
-          div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 5px 0 30px;
-            p {
-              span {
-                text-decoration:line-through;
-              }
-            }
-            #price {
-              margin-left: 5px;
-              font-size: 20px;
-              font-weight: 600;
-              color: rgb(142, 133, 167);
-            }
-          }
+      .outer_most {
+        text-align: center;
+        .heading {
+          font-size: 20px;
+          font-weight: 600;
+          color: rgb(115, 109, 131);
+          padding-bottom: 5px;
         }
-        .box {
-          width: 300px;
+        .outer {
+          background-color: rgb(248, 240, 255);
+          box-shadow: 0 0 5px rgba(115, 109, 131, .3);
+          padding: 10px;
+          border-radius: 20px;
+          margin: 0 20px;
           display: flex;
           flex-direction: column;
-          justify-content: center;
           align-items: center;
-          cursor: pointer;
-          text-decoration: none;
-          color: black;
-          img {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 0 5px rgba(115, 109, 131, .3);
+          justify-content: center;
+          .price {
+            div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 5px 0 10px;
+              p {
+                span {
+                  text-decoration:line-through;
+                }
+              }
+              #price {
+                margin-left: 5px;
+                font-size: 20px;
+                font-weight: 600;
+                color: rgb(142, 133, 167);
+              }
+            }
+          }
+          .box {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            img {
+              width: 100%;
+              border-radius: 20px;
+              box-shadow: 0 0 5px rgba(115, 109, 131, .3);
+            }
           }
         }
       }

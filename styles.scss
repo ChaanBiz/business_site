@@ -458,6 +458,64 @@ footer {
       }
     }
   }
+  
+  .discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 20px;
+    h2 {
+      color: rgb(115, 109, 131);
+    }
+    .choices {
+      margin: 50px 0;
+      display: flex;
+      flex-wrap: wrap;
+      .outer {
+        background-color: rgb(248, 240, 255);
+        box-shadow: 0 0 5px rgba(115, 109, 131, .3);
+        padding: 10px;
+        border-radius: 20px;
+        margin: 0 20px;
+        .price {
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 0 30px;
+            p {
+              span {
+                text-decoration:line-through;
+              }
+            }
+            #price {
+              margin-left: 5px;
+              font-size: 20px;
+              font-weight: 600;
+              color: rgb(142, 133, 167);
+            }
+          }
+        }
+        .box {
+          width: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          text-decoration: none;
+          color: black;
+          img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 0 5px rgba(115, 109, 131, .3);
+          }
+        }
+      }
+    }
+  }
 
   .contacts {
     padding: 5rem 0;
@@ -501,64 +559,6 @@ footer {
         }
       }
     }
-  }
-}
-
-#claim_page {
-  background-color: rgba(248, 240, 255, .6);
-  backdrop-filter: blur(10px);
-  width: 100%;
-  height: 100vh;
-  z-index: 999;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .claim_page {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    background-color: rgba(248, 240, 255, .5);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
-    padding-bottom: 50px;
-    border-radius: 30px;
-    z-index: 999;
-    #cancel {
-      display: flex;
-      justify-content: end;
-      font-size: 25px;
-      margin: 10px 30px 0 0;
-    }
-    .content {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 50px 0 20px;
-      .choices {
-        margin: 50px 0;
-        display: flex;
-        flex-wrap: wrap;
-        .box {
-          width: 300px;
-          margin: 0 10px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-          text-decoration: none;
-          color: black;
-          img {
-            width: 100%;
-            border-radius: 20px;
-          }
-        }
-      }
-    }
-  
   }
 }
 

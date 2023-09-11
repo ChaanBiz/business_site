@@ -576,6 +576,7 @@ section .hero {
 }
 .ui .redesign {
   display: flex;
+  align-items: center;
   padding: 4rem 3rem;
 }
 .ui .redesign .label {

@@ -472,9 +472,11 @@ footer {
     .choices {
       margin: 50px 0;
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       .outer_most {
         text-align: center;
+        margin: 20px;
         .heading {
           font-size: 20px;
           font-weight: 600;
@@ -486,7 +488,6 @@ footer {
           box-shadow: 0 0 5px rgba(115, 109, 131, .3);
           padding: 10px;
           border-radius: 20px;
-          margin: 0 20px;
           display: flex;
           flex-direction: column;
           align-items: center;

@@ -454,6 +454,13 @@ footer .bottom {
   color: rgb(115, 109, 131);
   font-weight: 600;
 }
+.portfolio .discount .directions {
+  line-height: 21px;
+}
+.portfolio .discount .first {
+  color: rgba(115, 109, 131, 0.7);
+  font-weight: 600;
+}
 .portfolio .discount .choices {
   margin: 50px 0;
   display: flex;

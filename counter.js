@@ -66,7 +66,7 @@ let hrBox = document.getElementById("hour");
 let minBox = document.getElementById("minute");
 let secBox = document.getElementById("second");
 
-let endDate = new Date(2023, 8, 15, 2, 0)
+let endDate = new Date(2023, 8, 15, 23, 59)
 let endTime = endDate
 
 function countdown() {

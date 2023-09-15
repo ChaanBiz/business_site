@@ -412,7 +412,7 @@ footer {
     width: 100%;
     padding-bottom: 3rem;
     position: relative;
-    .claim_note {
+    #claim_note {
       margin-bottom: 20px;
     }
     .count_down {
@@ -471,6 +471,7 @@ footer {
     }
     .directions {
       line-height: 21px;
+      display: none;
     }
     .first {
       color: rgba(115, 109, 131, .7);

@@ -61,12 +61,17 @@ const countDown = setInterval(
   },
 1000 )*/
 
-let dayBox = document.getElementById("day");
-let hrBox = document.getElementById("hour");
-let minBox = document.getElementById("minute");
-let secBox = document.getElementById("second");
+let dayBox = document.getElementById("day"),
+hrBox = document.getElementById("hour"),
+minBox = document.getElementById("minute"),
+secBox = document.getElementById("second"),
+lh2 = document.getElementById("label_h2"),
+lspan = document.getElementById("label_span"),
+note = document.getElementById("claim_note"),
+dh2 = document.getElementById("discount_h2"),
+directions = document.getElementById("directions")
 
-let endDate = new Date(2023, 9, 10, 23, 59)
+let endDate = new Date(2023, 9, 10, 0, 0)
 let endTime = endDate
 
 function countdown() {
@@ -81,9 +86,14 @@ function countdown() {
 
   let addZeroes = (num) => (num < 10 ? `0${num}` : num)
 
-  if (endTime < todayTime) {
+  if (endTime < todayDate) {
     clearInterval(i)
     //document.querySelector(".count_down").innerHTML = `<h1>Discount has expired...</h1>`
+    // lh2.textContent = `25% discount!
+    //  claim NOW!`;
+    // lspan.textContent = "yw"
+    // note.textContent = "Discount will end in"
+    // directions.style.display = "block"
   } else {
     let dys = Math.floor(remainingTime / oneDay)
     let hrs = Math.floor((remainingTime % oneDay) / oneHr)

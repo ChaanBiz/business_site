@@ -71,7 +71,7 @@ note = document.getElementById("claim_note"),
 dh2 = document.getElementById("discount_h2"),
 directions = document.getElementById("directions")
 
-let endDate = new Date(2023, 10, 19, 0, 0)
+let endDate = new Date(2023, 11, 12, 0, 0)
 let endTime = endDate
 
 function countdown() {
